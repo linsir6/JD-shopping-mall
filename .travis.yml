@@ -1,4 +1,4 @@
-anguage: android
+language: android
 jdk: oraclejdk8
 sudo: false
 
@@ -9,9 +9,7 @@ android:
     - android-26
     - extra-android-m2repository
     - extra-android-support
-  licenses:
-      - android-sdk-license-.+
-      - '.+'
+  
 
 before_install:
   - chmod +x gradlew
