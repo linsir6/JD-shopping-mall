@@ -1,5 +1,8 @@
 # JD-shopping-mall
 
+
+![](https://travis-ci.org/linsir6/JD-shopping-mall.svg?branch=dev)
+
 一款高仿京东商城的安卓项目，后台采用node搭建，欢迎star，follow～
 
 由于京东APP会经常更新，本项目目前决定基于京东Android App V6.6.2 build 55835开发。
