@@ -19,14 +19,15 @@ class HomeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val adapter = HomeAdapter(supportFragmentManager)
-        viewPager.setScroll(true)
         viewPager.adapter = adapter
-
-
+        tabLayout.setupWithViewPager(viewPager);
+        adapter.init(tabLayout, this);
+        adapter.setupTabLayout(tabLayout, viewPager);
 
     }
 
     override fun cancelRequest() {
+
     }
 
 }
