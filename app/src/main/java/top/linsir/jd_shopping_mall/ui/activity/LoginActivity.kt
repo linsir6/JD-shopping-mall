@@ -2,7 +2,7 @@ package top.linsir.jd_shopping_mall.ui.activity
 
 import android.os.Bundle
 import top.linsir.jd_shopping_mall.R
-import top.linsir.jd_shopping_mall.ui.base.BaseActivity
+import top.linsir.jd_shopping_mall.base.BaseActivity
 
 /**
  *  Created by linSir
@@ -15,13 +15,15 @@ class LoginActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        showLoading();
 
     }
 
-    override fun isHaveTitleBar() {
+    override fun cancelRequest() {
 
     }
 
+    override fun setLayoutId(): Int {
+        return R.layout.activity_main;
+    }
 
 }
