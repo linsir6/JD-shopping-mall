@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/icon_discover_checked"
+        android:title="1111"
+        />
+
+    <item
+        android:id="@+id/navigation_type"
+        android:title="111"
+        />
+
+</menu>
