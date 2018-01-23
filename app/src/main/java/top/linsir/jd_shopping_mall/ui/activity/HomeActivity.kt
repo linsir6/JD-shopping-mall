@@ -20,9 +20,10 @@ class HomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         val adapter = HomeAdapter(supportFragmentManager)
         viewPager.adapter = adapter
-        tabLayout.setupWithViewPager(viewPager);
-        adapter.init(tabLayout, this);
-        adapter.setupTabLayout(tabLayout, viewPager);
+        viewPager.offscreenPageLimit = 4
+        tabLayout.setupWithViewPager(viewPager)
+        adapter.init(tabLayout, this)
+        adapter.setupTabLayout(tabLayout, viewPager)
 
     }
 

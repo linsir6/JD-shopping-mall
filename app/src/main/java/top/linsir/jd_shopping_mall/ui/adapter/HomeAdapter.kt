@@ -24,9 +24,9 @@ public class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private var fragments: MutableList<Fragment> = ArrayList()
     private val imgNormal = arrayOf(R.mipmap.icon_home_normal, R.mipmap.icon_sort_normal
-            , R.mipmap.icon_shopping_cart_normal, R.mipmap.icon_me_normal);
+            , R.mipmap.icon_shopping_cart_normal, R.mipmap.icon_me_normal)
     private val imgChecked = arrayOf(R.mipmap.icon_home_checked, R.mipmap.icon_sort_checked
-            , R.mipmap.icon_shopping_cart_checked, R.mipmap.icon_me_checked);
+            , R.mipmap.icon_shopping_cart_checked, R.mipmap.icon_me_checked)
 
 
     init {
@@ -37,7 +37,7 @@ public class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     }
 
     override fun getItem(position: Int): Fragment {
-        return fragments[position];
+        return fragments[position]
     }
 
     override fun getCount(): Int = fragments.size
@@ -48,13 +48,13 @@ public class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab?) {
-                viewPager.currentItem = tabLayout.selectedTabPosition
+                viewPager.setCurrentItem(tabLayout.selectedTabPosition, false)
                 tab!!.customView!!.findViewById<ImageView>(R.id.ivItem)
                         .setImageResource(imgNormal[tab.position])
             }
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                viewPager.currentItem = tabLayout.selectedTabPosition
+                viewPager.setCurrentItem(tabLayout.selectedTabPosition, false)
                 tab!!.customView!!.findViewById<ImageView>(R.id.ivItem)
                         .setImageResource(imgChecked[tab.position])
             }
@@ -66,15 +66,15 @@ public class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     @SuppressLint("InflateParams")
     fun init(tabLayout: TabLayout, context: Context) {
 
-        var view = LayoutInflater.from(context).inflate(R.layout.custom_tablayout_item, null);
-        var ivItem = view.findViewById<ImageView>(R.id.ivItem);
-        ivItem.setImageResource(imgChecked[0]);
+        var view = LayoutInflater.from(context).inflate(R.layout.custom_tablayout_item, null)
+        var ivItem = view.findViewById<ImageView>(R.id.ivItem)
+        ivItem.setImageResource(imgChecked[0])
         tabLayout.getTabAt(0)!!.customView = view
 
         for (i in 1 until imgChecked.size) {
-            view = LayoutInflater.from(context).inflate(R.layout.custom_tablayout_item, null);
-            ivItem = view.findViewById<ImageView>(R.id.ivItem);
-            ivItem.setImageResource(imgNormal[i]);
+            view = LayoutInflater.from(context).inflate(R.layout.custom_tablayout_item, null)
+            ivItem = view.findViewById<ImageView>(R.id.ivItem)
+            ivItem.setImageResource(imgNormal[i])
             tabLayout.getTabAt(i)!!.customView = view
         }
     }
