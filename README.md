@@ -45,3 +45,12 @@
 
 - [关玮琳linSir](http://linsir.top/)
 - [徐桑博xiaoxiangyeyuHeaven](https://github.com/xiaoxiangyeyuHeaven)
+
+## 项目进展
+
+
+本项目将是一个长期维护的项目，为了让其余开发者和读者更好的了解项目开发的进展，会在此加一个项目进度:
+
+- 2018-01-23 : 项目采用tablayout + viewpager的形式搭建主页面
+
+
