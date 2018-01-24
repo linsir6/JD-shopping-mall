@@ -53,4 +53,4 @@
 
 - 2018-01-23 : 项目采用tablayout + viewpager的形式搭建主页面
 
-![](https://ws1.sinaimg.cn/large/006tNc79ly1fnqsyxaxoej30os19at8w.jpg)
+

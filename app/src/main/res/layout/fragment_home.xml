@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="home"
-        android:gravity="center"
+        android:orientation="vertical">
 
-        />
 
-</LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF">
+
+            <ImageView
+                android:id="@+id/scan"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#dfdfdf" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/scan"
+                android:layout_toStartOf="@id/redPacket"
+
+                />
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:background="#42a5f5" />
+
+            <ImageView
+                android:id="@+id/redPacket"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_toStartOf="@id/message"
+                android:background="#df3011" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -20,7 +20,7 @@ import top.linsir.jd_shopping_mall.ui.fragment.SortFragment
  *  date at 2018/1/23.
  *  describe:
  */
-public class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+public class HomeActivityAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private var fragments: MutableList<Fragment> = ArrayList()
     private val imgNormal = arrayOf(R.mipmap.icon_home_normal, R.mipmap.icon_sort_normal
