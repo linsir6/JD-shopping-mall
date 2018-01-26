@@ -2,10 +2,26 @@
 
 ext.support_version = "26.1.0"
 
+ext.retrofit2_version = "2.1.0"
+ext.retrofit2_converter_gson_version = "2.1.0"
+ext.retrofit2_converter_kotlin_coroutines_version = "1.0.0"
+ext.okhttp3_logging_version = "3.6.0"
+ext.kotlin_coroutines_version = "0.20"
+ext.constraint_version = "1.0.2"
+ext.junit_version = "4.12"
+ext.test_runner_version = "1.0.1"
+ext.test_espresso_version = "3.0.1"
+ext.brvah_version = "2.9.34"
+ext.glide_version = "3.7.0"
+ext.agentweb_version = "3.0.0"
+ext.barlibrary_version = "2.3.0"
+ext.flowlayout_version = "1.1.2"
+ext.leakcanary_version = "1.5.4"
+
 buildscript {
     ext.kotlin_version = '1.2.20'
     repositories {
-       // maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         jcenter()
         google()
     }
@@ -20,7 +36,7 @@ buildscript {
 
 allprojects {
     repositories {
-       // maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         jcenter()
         mavenCentral()
