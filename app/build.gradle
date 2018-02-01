@@ -50,7 +50,19 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.22"
 
-    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:$retrofit2_converter_kotlin_coroutines_version"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-4"
+
+    implementation(["com.squareup.okhttp3:logging-interceptor:$okhttp_version",
+                    "com.squareup.retrofit2:retrofit:$retrofit2_version",
+                    "com.squareup.retrofit2:adapter-rxjava2:$retrofit2_version",
+                    "com.squareup.retrofit2:converter-gson:$retrofit2_version"])
+
+    implementation(["io.reactivex.rxjava2:rxandroid:$rxandroid_version",
+                    "io.reactivex.rxjava2:rxjava:$rxjava_version"])
+
+    implementation(["com.trello.rxlifecycle2:rxlifecycle-kotlin:$rxlifecycle_version",
+                    "com.trello.rxlifecycle2:rxlifecycle-components:$rxlifecycle_version"])
 }
 kotlin {
     experimental {

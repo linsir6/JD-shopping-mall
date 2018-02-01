@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 
-    <top.linsir.jd_shopping_mall.customview.NoScrollViewPager
+    <top.linsir.mall.customview.NoScrollViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +14,7 @@
         android:fitsSystemWindows="true">
 
 
-    </top.linsir.jd_shopping_mall.customview.NoScrollViewPager>
+    </top.linsir.mall.customview.NoScrollViewPager>
 
 
     <View
