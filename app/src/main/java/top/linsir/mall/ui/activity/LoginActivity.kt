@@ -69,7 +69,7 @@ class LoginActivity : BaseActivity(), LoginView {
     private val onClickListener = View.OnClickListener { view ->
         when (view.id) {
             R.id.login -> {
-                loginPresenter.loginWanAndroid(this, input_username.text.toString(), input_password.text.toString())
+                loginPresenter.login(this, input_username.text.toString(), input_password.text.toString())
             }
 
             R.id.visible_password -> {

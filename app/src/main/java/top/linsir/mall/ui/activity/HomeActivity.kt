@@ -1,4 +1,6 @@
 package top.linsir.mall.ui.activity
+
+import NetworkScheduler
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -40,21 +42,5 @@ class HomeActivity : BaseActivity() {
     }
 
 
-    private fun fetchRepo() {
-        ApiClient.instance.service.listRepos()
-                .compose(NetworkScheduler.compose())
-                .bindUntilEvent(this, ActivityEvent.DESTROY)
-                .subscribe(object : ApiResponse<Repo>(this) {
-                    override fun success(data: Repo) {
-                        Toast.makeText(this@HomeActivity, "zzzz", Toast.LENGTH_SHORT).show()
-                    }
-
-                    override fun failure(statusCode: Int, apiErrorModel: ApiErrorModel) {
-                        Log.i("lin", "---lin--->  " + apiErrorModel.status)
-                        Log.i("lin", "---lin--->  " + apiErrorModel.message)
-                        Toast.makeText(this@HomeActivity, "111111111", Toast.LENGTH_SHORT).show()
-                    }
-                })
-    }
 
 }
