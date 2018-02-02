@@ -4,6 +4,7 @@ import NetworkScheduler
 import android.content.Context
 import android.util.Log
 import kotlinx.coroutines.experimental.Deferred
+import top.linsir.mall.been.User
 import top.linsir.mall.delegate.LoginResponse
 import top.linsir.mall.network.ApiClient
 import top.linsir.mall.network.ApiErrorModel
@@ -20,9 +21,9 @@ class HomeModelImpl : HomeModel, CollectArticleModel {
     private var loginAsync: Deferred<LoginResponse>? = null
 
 
-    override fun loginWanAndroid(onLoginListener: HomePresenter.OnLoginListener, context: Context, username: String, password: String) {
+    override fun login(onLoginListener: HomePresenter.OnLoginListener, context: Context, username: String, password: String) {
 
-        ApiClient.instance.service.listRepos()
+        ApiClient.instance.service.login(User(username, password))
                 .compose(NetworkScheduler.compose())
                 .subscribe(object : ApiResponse<Repo>(context) {
                     override fun success(data: Repo) {

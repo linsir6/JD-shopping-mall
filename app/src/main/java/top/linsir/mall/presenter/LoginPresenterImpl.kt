@@ -28,8 +28,8 @@ class LoginPresenterImpl(private val loginView: LoginView) : HomePresenter.OnLog
 
     }
 
-    override fun loginWanAndroid(context: Context, username: String, password: String) {
-        homeModel.loginWanAndroid(this, context, username, password)
+    override fun login(context: Context, username: String, password: String) {
+        homeModel.login(this, context, username, password)
     }
 
     override fun loginSuccess(result: LoginResponse) {

@@ -45,7 +45,7 @@ interface HomePresenter {
 
     interface OnLoginListener {
 
-        fun loginWanAndroid(context: Context, username: String, password: String)
+        fun login(context: Context, username: String, password: String)
 
         fun loginSuccess(result: LoginResponse)
 

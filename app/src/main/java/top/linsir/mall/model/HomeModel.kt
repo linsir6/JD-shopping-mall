@@ -11,7 +11,7 @@ import top.linsir.mall.presenter.HomePresenter
 interface HomeModel {
 
 
-    fun loginWanAndroid(
+    fun login(
             onLoginListener: HomePresenter.OnLoginListener,
             context: Context,
             username: String,
