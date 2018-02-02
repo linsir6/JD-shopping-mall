@@ -27,7 +27,7 @@ class ApiClient private constructor() {
                 .build()
 
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://rap2api.taobao.org/app/mock/373/GET/")
+                .baseUrl("http://192.168.20.18:7001/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
