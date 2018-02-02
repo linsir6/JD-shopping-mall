@@ -4,7 +4,7 @@ import retrofit2.http.GET
 import top.linsir.mall.model.Repo
 
 interface GitHubService {
-    @GET("test")
+    @GET("/user/login")
     fun listRepos(): Observable<Repo>
 
 
