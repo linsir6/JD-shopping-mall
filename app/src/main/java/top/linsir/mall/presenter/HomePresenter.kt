@@ -1,5 +1,6 @@
 package top.linsir.mall.presenter
 
+import android.content.Context
 import top.linsir.mall.delegate.LoginResponse
 
 /**
@@ -44,7 +45,7 @@ interface HomePresenter {
 
     interface OnLoginListener {
 
-        fun loginWanAndroid(username: String, password: String)
+        fun loginWanAndroid(context: Context, username: String, password: String)
 
         fun loginSuccess(result: LoginResponse)
 
