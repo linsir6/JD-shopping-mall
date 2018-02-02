@@ -5,4 +5,14 @@
     <string name="timeout">请求超时</string>
     <string name="unexpected_error">未知错误</string>
     <string name="network_wrong">网络有问题</string>
+    <string name="input_user_name">请输入用户名</string>
+    <string name="login_is_sure_intimity">登录即代表您已同意京东隐私策略</string>
+    <string name="jd_login">京东登录</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="use_phone_register">手机快速注册</string>
+
+
 </resources>
