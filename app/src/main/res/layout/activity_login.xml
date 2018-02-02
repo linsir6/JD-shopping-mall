@@ -42,12 +42,12 @@
 
         <EditText
             android:id="@+id/input_username"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_toEndOf="@+id/account"
             android:background="@null"
-            android:gravity="center"
+            android:layout_marginStart="30dp"
             android:hint="@string/input_user_name" />
 
     </RelativeLayout>
@@ -78,12 +78,12 @@
 
         <EditText
             android:id="@+id/input_password"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="30dp"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
             android:layout_toEndOf="@+id/password"
             android:background="@null"
-            android:gravity="center"
             android:hint="@string/input_password"
             android:inputType="textPassword" />
 

@@ -59,7 +59,7 @@ class SortFragment: BaseFragment(){
 
         val goodsAdapter = SortFragmentGoodsAdapter(R.layout.item_sort_goods)
         goods.adapter = goodsAdapter;
-        goods.layoutManager = GridLayoutManager(activity, 3)
+        goods.layoutManager = GridLayoutManager(activity, 3);
         val list2 = ArrayList<GoodsItem>()
         list2.add(GoodsItem("test", "test"))
         list2.add(GoodsItem("test", "test"))
@@ -70,27 +70,7 @@ class SortFragment: BaseFragment(){
         goodsAdapter.setNewData(list2)
     }
 
-    /**
-     * 网络请求示例
-     */
-//    private fun fetchRepo() {
-//        ApiClient.instance.service.listRepos()
-//                .compose(NetworkScheduler.compose())
-//                .bindToLifecycle(this)
-//                .subscribe(object : ApiResponse<Repo>(this.context!!) {
-//                    override fun success(data: Repo) {
-//                        Toast.makeText(activity, "aaa", Toast.LENGTH_SHORT).show();
-//
-//                    }
-//
-//                    override fun failure(statusCode: Int, apiErrorModel: ApiErrorModel) {
-//                        Log.i("lin", "---lin--->  " + apiErrorModel.status)
-//                        Log.i("lin", "---lin--->  " + apiErrorModel.message)
-//                        Toast.makeText(activity, "bbb", Toast.LENGTH_SHORT).show();
-//
-//                    }
-//                })
-//    }
+
 
     override fun cancelRequest() {
 
