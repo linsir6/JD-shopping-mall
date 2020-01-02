@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
-
-    <TextView
-        android:layout_width="match_parent"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sort"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:text="sort"
-        android:gravity="center"
+        android:layout_weight="1">
 
-        />
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:background="#dfdfdf" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+
+    </android.support.v7.widget.RecyclerView>
+
 
 </LinearLayout>
